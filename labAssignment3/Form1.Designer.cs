@@ -42,14 +42,20 @@
             this.chkPainting = new System.Windows.Forms.CheckBox();
             this.btnPreview = new System.Windows.Forms.Button();
             this.cmbCountry = new System.Windows.Forms.ComboBox();
+            this.dgtCustomer = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.lblID = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgtCustomer)).BeginInit();
             this.SuspendLayout();
             // 
             // CustomerName
             // 
             this.CustomerName.AutoSize = true;
-            this.CustomerName.Location = new System.Drawing.Point(72, 59);
+            this.CustomerName.Location = new System.Drawing.Point(28, 27);
             this.CustomerName.Name = "CustomerName";
             this.CustomerName.Size = new System.Drawing.Size(111, 15);
             this.CustomerName.TabIndex = 0;
@@ -58,7 +64,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(104, 105);
+            this.label2.Location = new System.Drawing.Point(60, 73);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 15);
             this.label2.TabIndex = 1;
@@ -66,7 +72,7 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(207, 49);
+            this.txtName.Location = new System.Drawing.Point(163, 17);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(129, 25);
             this.txtName.TabIndex = 2;
@@ -75,7 +81,7 @@
             // 
             this.groupBox1.Controls.Add(this.radioFemale);
             this.groupBox1.Controls.Add(this.radioMale);
-            this.groupBox1.Location = new System.Drawing.Point(63, 163);
+            this.groupBox1.Location = new System.Drawing.Point(19, 131);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(290, 100);
             this.groupBox1.TabIndex = 4;
@@ -109,7 +115,7 @@
             // 
             this.groupBox2.Controls.Add(this.radioUnmarried);
             this.groupBox2.Controls.Add(this.radioMarried);
-            this.groupBox2.Location = new System.Drawing.Point(63, 347);
+            this.groupBox2.Location = new System.Drawing.Point(19, 315);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(290, 100);
             this.groupBox2.TabIndex = 5;
@@ -141,7 +147,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(92, 297);
+            this.label3.Location = new System.Drawing.Point(48, 265);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 15);
             this.label3.TabIndex = 6;
@@ -150,7 +156,7 @@
             // chkReading
             // 
             this.chkReading.AutoSize = true;
-            this.chkReading.Location = new System.Drawing.Point(185, 297);
+            this.chkReading.Location = new System.Drawing.Point(141, 265);
             this.chkReading.Name = "chkReading";
             this.chkReading.Size = new System.Drawing.Size(85, 19);
             this.chkReading.TabIndex = 7;
@@ -160,7 +166,7 @@
             // chkPainting
             // 
             this.chkPainting.AutoSize = true;
-            this.chkPainting.Location = new System.Drawing.Point(292, 297);
+            this.chkPainting.Location = new System.Drawing.Point(248, 265);
             this.chkPainting.Name = "chkPainting";
             this.chkPainting.Size = new System.Drawing.Size(93, 19);
             this.chkPainting.TabIndex = 8;
@@ -169,7 +175,7 @@
             // 
             // btnPreview
             // 
-            this.btnPreview.Location = new System.Drawing.Point(146, 481);
+            this.btnPreview.Location = new System.Drawing.Point(19, 437);
             this.btnPreview.Name = "btnPreview";
             this.btnPreview.Size = new System.Drawing.Size(113, 23);
             this.btnPreview.TabIndex = 9;
@@ -186,16 +192,71 @@
             "UK",
             "Japan",
             "Korea"});
-            this.cmbCountry.Location = new System.Drawing.Point(207, 97);
+            this.cmbCountry.Location = new System.Drawing.Point(163, 65);
             this.cmbCountry.Name = "cmbCountry";
             this.cmbCountry.Size = new System.Drawing.Size(129, 23);
             this.cmbCountry.TabIndex = 10;
+            // 
+            // dgtCustomer
+            // 
+            this.dgtCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgtCustomer.Location = new System.Drawing.Point(347, 49);
+            this.dgtCustomer.Name = "dgtCustomer";
+            this.dgtCustomer.RowHeadersWidth = 51;
+            this.dgtCustomer.RowTemplate.Height = 27;
+            this.dgtCustomer.Size = new System.Drawing.Size(820, 318);
+            this.dgtCustomer.TabIndex = 11;
+            this.dgtCustomer.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgtCustomer_CellClick);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(194, 436);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(98, 23);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Add";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(19, 504);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(113, 23);
+            this.button2.TabIndex = 13;
+            this.button2.Text = "Update";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // lblID
+            // 
+            this.lblID.AutoSize = true;
+            this.lblID.Location = new System.Drawing.Point(13, 504);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(0, 15);
+            this.lblID.TabIndex = 14;
+            this.lblID.Visible = false;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(194, 504);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(98, 23);
+            this.button3.TabIndex = 15;
+            this.button3.Text = "Delete";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // frmCustomerDataEntry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(456, 543);
+            this.ClientSize = new System.Drawing.Size(1179, 543);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.lblID);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.dgtCustomer);
             this.Controls.Add(this.cmbCountry);
             this.Controls.Add(this.btnPreview);
             this.Controls.Add(this.chkPainting);
@@ -208,10 +269,12 @@
             this.Controls.Add(this.CustomerName);
             this.Name = "frmCustomerDataEntry";
             this.Text = "Customer Data Entry Screen";
+            this.Load += new System.EventHandler(this.frmCustomerDataEntry_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgtCustomer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -233,6 +296,11 @@
         private System.Windows.Forms.CheckBox chkPainting;
         private System.Windows.Forms.Button btnPreview;
         private System.Windows.Forms.ComboBox cmbCountry;
+        private System.Windows.Forms.DataGridView dgtCustomer;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lblID;
+        private System.Windows.Forms.Button button3;
     }
 }
 
