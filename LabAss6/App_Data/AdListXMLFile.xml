@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+	<Ad>
+		<ImageUrl>~/ads//adv4.jpg</ImageUrl>
+		<Width>200</Width>
+		<Height>150</Height>
+		<NavigateUrl>http://www.ad4.com</NavigateUrl>
+		<AlternateText>This id ad4</AlternateText>
+		<Impressions>25</Impressions>
+		<Keyword>ads2</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/ads//adv5.jpg</ImageUrl>
+		<Width>200</Width>
+		<Height>150</Height>
+		<NavigateUrl>http://www.ad5.com</NavigateUrl>
+		<AlternateText>This id ad5</AlternateText>
+		<Impressions>25</Impressions>
+		<Keyword>ads2</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/ads//adv6.jpg</ImageUrl>
+		<Width>200</Width>
+		<Height>150</Height>
+		<NavigateUrl>http://www.ad6.com</NavigateUrl>
+		<AlternateText>This id ad6</AlternateText>
+		<Impressions>25</Impressions>
+		<Keyword>ads2</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/ads//adv7.jpg</ImageUrl>
+		<Width>200</Width>
+		<Height>150</Height>
+		<NavigateUrl>http://www.ad7.com</NavigateUrl>
+		<AlternateText>This id ad7</AlternateText>
+		<Impressions>25</Impressions>
+		<Keyword>ads2</Keyword>
+	</Ad>
+	
+	<Ad>
+		<ImageUrl>~/ads//adv8.jpg</ImageUrl>
+		<Width>200</Width>
+		<Height>150</Height>
+		<NavigateUrl>http://www.ad8.com</NavigateUrl>
+		<AlternateText>This id ad8</AlternateText>
+		<Impressions>25</Impressions>
+		<Keyword>ads2</Keyword>
+	</Ad>
+
+	<Ad>
+		<ImageUrl>~/ads//BannerAd1.gif</ImageUrl>
+		<Width>200</Width>
+		<Height>150</Height>
+		<NavigateUrl>http://www.ad1.com</NavigateUrl>
+		<AlternateText>This id ad1</AlternateText>
+		<Impressions>25</Impressions>
+		<Keyword>ads1</Keyword>
+	</Ad >
+	<Ad>
+		<ImageUrl>~/ads//BannerAd2.gif</ImageUrl>
+		<Width>200</Width>
+		<Height>150</Height>
+		<NavigateUrl>http://www.ad2.com</NavigateUrl>
+		<AlternateText>This id ad2</AlternateText>
+		<Impressions>25</Impressions>
+		<Keyword>ads1</Keyword>
+	</Ad >
+	<Ad>
+		<ImageUrl>~/ads//BannerAd3.gif</ImageUrl>
+		<Width>200</Width>
+		<Height>150</Height>
+		<NavigateUrl>http://www.ad3.com</NavigateUrl>
+		<AlternateText>This id ad3</AlternateText>
+		<Impressions>25</Impressions>
+		<Keyword>ads1</Keyword>
+	</Ad >
+</Advertisements>
